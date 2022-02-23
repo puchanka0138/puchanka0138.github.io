@@ -6,29 +6,27 @@
 .jumbotron{
     margin: 3% 15%;
     margin-top: 3%;
-    background-color: #5d8f4e;
+    background-color: #858482;
 }
-
-
 
 body {
     font-family: Playfair Display;
-    background-color: #baca95;
+    background-color: black;
 }
 
-
 #Main {
-  background-image: url(images/27302.jpg);
+  background-image: url(images/darkbg.jpg);
   background-size: cover;
   background-repeat:no-repeat;
 }
 
 .main{
-    background-color: #baca95;
+    background-color: black;
     height: 100%;
 }
+
 footer{
-    background-color: rgba(216, 248, 186, 0.486);
+    background-color: #858482;
     height: 420px;
     width: 1300px;
 
@@ -49,7 +47,7 @@ footer a{
 }
 h2{
     font-size: 48pt;
-    color: #38572e;
+    color: white;
     text-align: center;
 }
 h4{
@@ -91,6 +89,7 @@ h9{
     top: 295pt;
     margin-left: 145pt;
 }
+
 .container1{
     width: 90%;
     position: relative;
@@ -171,7 +170,7 @@ h9{
   }
 
   #FAQ {
-    background-image: url(images/27302.jpg);
+    background-image: url(images/darkbg.jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
@@ -182,152 +181,26 @@ h9{
   }
   .Questions{
       padding-bottom: 130px;
-      background-color: #87b381;
+      background-color: #858482;
   }
   h1{
-      font-size: 150%;
+      font-size: medium;
       font-weight: bold;
       color: beige;
   }
+
   p{
     font-size: small;
     color: beige;
   }
-  .answer {
-    font-size: medium;
-    display: none;
-    padding: 5px;
-    text-align: left;
-  }
+
   .foot {
           font-size: medium;
           position: fixed;
           bottom: 0;
          	width: 100%	;
           color: #ffffff;
-          background-color: #394d369c;
+          background-color: #858482;
           padding: 2.5px 0;
           text-align: center;
   }
-  .accordion {
-    background-color: #87b381;
-    color: rgb(240, 235, 235);
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 24px;
-    transition: 0.4s;
-  }
-  
-  
-  .accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2212";
-  }
-  .panel {
-    padding: 0 18px;
-    background-color: #60855c;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-  
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
-}
-
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
-
-.button {
-  border-radius: 4px;
-  background-color: #86c28e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 22px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}

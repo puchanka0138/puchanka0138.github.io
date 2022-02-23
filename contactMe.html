@@ -6,15 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wittygiddy</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" id="theme">
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
-<body id="Main">
-  <audio loop autoplay>
-    <source src="sounds\Chill.mp3" type="audio/mp3">
-  </audio>
-
+<body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo of shop" width="140" height="30"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,11 +17,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="shop.html">Shop</a>
+          <a class="nav-link active" href="shop.html">Shop</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contactMe.html">Contact Me</a>
@@ -37,30 +32,64 @@
       </ul>
     </div>
   </nav>
-  
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-4 headingMove"><strong>hey! welcome to the home of sustainable handmade clothing :)<strong></h1>
-      <hr style="width:50%;text-align:center;margin-top:40pt">
-      <p class="lead">sustainable fashion // <strong><em>a movement</em></strong>  that  aims to grow the ecological integrity and social justice of fashion products and the fashion system.</p>
-      <hr style="width:50%;text-align:center;margin-top:40pt">
-      <div claa="col align-items-center"></div>
-      <div class="row justify-content-center">
-        <div class="col-5">
-            <a href="shop.html"><button style="display:block; margin: 0 auto;" class="button"><span>shop now</span></button></a>
-        
+
+  <section>
+
+    <div class="container col-sm-12 main">
+
+      <h2 id="shop">contact me</h2>
+      <form id="form-body">
+        <div class="form-row">
+
+          <div class="form-group col-md-6">
+            <label for="input-group-text">name</label>
+            <input type="text" class="form-control" id="input0" required>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="input-group-text">surname</label>
+            <input type="text" class="form-control" id="input1" reqired>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="foot">
-  	<p>2022&copy; rights reserved by "wittygiddy"</p>
-  </div>
- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <div class="form-group">
+            <label for="input-group-text">phone number</label>
+            <input type="text" class="form-control" id="input2" required>
+        </div>
+
+        <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">email</span>
+              </div>
+              <input type="email" class="form-control" id="input3" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="validationTextarea">your message</label>
+          <textarea class="form-control input" placeholder="Text me" id="input4" required></textarea>
+          <div class="invalid-feedback">
+            Please enter a message in the text area.
+          </div>
+        </div>
+        <div class="popup" onclick="myFunction()">Send!
+          <span class="popuptext" id="myPopup">Your message was succesfully sent!♡</span>
+        </div>
+       
+      </form>
+
+
+</section>
+
+<div class="foot">
+  <p>2022&copy; rights reserved by "wittygiddy"</p>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/864e759631.js" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
